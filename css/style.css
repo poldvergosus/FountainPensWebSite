@@ -14,22 +14,31 @@
 }
 
 .site-header {
-    display: flex;
     position: relative;
-    padding: 10px 0;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: row;
-}
+    padding: 20px 0;
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+  
 
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr auto; /* центральная часть + фиксированная правая колонка */
+    max-width: 1700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: start;
+  }
+  
 
+/* Центрируем всю основную часть */
 .header-wrapper {
-    position: relative;
     display: flex;
-    justify-content: center;
     align-items: flex-end;
+    justify-content: center;
     text-align: center;
-}
+  }
 
 .arm-icon {
     width: 165.76px;
@@ -96,14 +105,14 @@
 
 }
 
-.main-actions{
-    display: flex;
-    position: relative;
-    padding: 10px 0;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: row;
-    
+.main-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  z-index: 10;
 }
 
 .search-button-wrapper {
