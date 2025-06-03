@@ -18,27 +18,26 @@
     padding: 20px 0;
     max-width: 1700px;
     margin: 0 auto;
-  }
-  
+}
+
 
 .header-container {
     display: grid;
-    grid-template-columns: 1fr auto; /* центральная часть + фиксированная правая колонка */
+    grid-template-columns: 1fr auto;
     max-width: 1700px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
     align-items: start;
-  }
-  
+}
 
-/* Центрируем всю основную часть */
+
 .header-wrapper {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     text-align: center;
-  }
+}
 
 .arm-icon {
     width: 165.76px;
@@ -106,13 +105,13 @@
 }
 
 .main-actions {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  align-items: stretch;
-  gap: 0;
-  z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    z-index: 10;
 }
 
 .search-button-wrapper {
@@ -139,7 +138,7 @@
     background-image: url("../images/search_glass_hover.webp");
 }
 
-.auth-button{
+.auth-button {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -149,7 +148,7 @@
     margin-right: 30px;
     width: 122px;
     height: 156px;
-   
+
     border-left: 3px solid var(--color-primary);
     border-right: 3px solid var(--color-primary);
     font-family: var(--font-family);
@@ -161,27 +160,65 @@
     margin-bottom: -15px;
 }
 
-.cart-button-wrapper{
+
+.cart-button-wrapper {
     display: flex;
-    justify-content: end;
-    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-sizing: border-box;
 }
 
-.cart-button{
-    width: 115.69px;
-    height: 115.69px;
+.cart-button {
+    width: 100px;
+    height: 100px;
+}
+
+.cart-icon {
+    width: 79px;
+    height: 76px;
     background-image: url("../images/basket_icon.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    transition: background-image 0.3s ease;
+    position: relative;
 }
 
 .cart-button:hover {
     background-image: url("../images/basket_icon_hover.webp");
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    font-size: var(--font-size-regular);
+    font-weight: bold;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Цена под иконкой */
+.cart-price {
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: var(--font-family);
+    color: var(--color-primary);
+    font-weight: 600;
+    text-align: center;
+}
+
+.cart-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .decorative-line {
@@ -190,5 +227,3 @@
     border-top: 3px solid var(--color-primary);
     height: 0;
 }
-
-
