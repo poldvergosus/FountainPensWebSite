@@ -110,10 +110,14 @@ body {
     gap: 15px;
 }
 
+
 .category-menu a {
     text-decoration: none;
     color: var(--color-primary);
+}
 
+.category-menu a:hover {
+    color: var(--color-accent);
 }
 
 .main-actions {
@@ -185,15 +189,14 @@ body {
 .cart-icon {
     width: 79px;
     height: 76px;
-    background-image: url("../images/basket_icon.webp");
-    background-size: contain;
+    background-image: url("../images/cart_sprite.webp");
+    background-size: 155px 75px;
     background-repeat: no-repeat;
-    background-position: center;
     position: relative;
 }
 
 .cart-button:hover .cart-icon {
-    background-image: url("../images/basket_icon_hover.webp");
+    background-position: -77px 0;
 }
 
 .preload-images {
@@ -337,11 +340,91 @@ body {
     z-index: 2;
 }
 
+/*___________________STRIP SECTION______________________ */
+
+.brand-track {
+    overflow: hidden;
+    border-bottom: 2px solid #A2A9B4;
+    white-space: nowrap;
+}
+
+.brand-track:hover .brand-item {
+    animation-play-state: paused;
+}
+
+.brand-item {
+    display: inline-block;
+    animation: 30s slide infinite linear;
+}
+
+.brand-item img {
+    height: 50px;
+    padding: 0 10px;
+    margin-bottom: -5px;
+}
+
+.logo-wrap {
+    border-right: 3px solid #A2A9B4;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    height: 50px;
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/*___________________MEDIA SECTION______________________ */
+
+.page-width {
+    margin: 0 auto;
+    max-width: 1690px;
+    width: 90%;
+}
+
+.homepg-top-grid {
+    column-gap: 2rem;
+    display: grid;
+    grid-template-areas:
+        "homepg-top-grid popular-carusel newsletter"
+        "homepg-top-grid products newsletter"
+        "homepg-top-grid categories newsletter";
+    grid-template-columns: 2fr 7fr 2fr;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    row-gap: 2rem;
+}
+
+.homepg-top-grid {
+    grid-area: homepg-top-grid;
+
+}
+
+.popular-caruse {
+    grid-area: popular-caruse;
+
+}
+
+.newsletter {
+    grid-area: newsletter;
+
+}
+
+/*___________________MEDIA SECTION______________________ */
 @media (min-width: 2000px) {
     .hero {
         min-height: 650px;
     }
-    .hero-content{
+
+    .hero-content {
         left: 450px;
     }
 }
