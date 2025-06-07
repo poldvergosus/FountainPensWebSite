@@ -3,6 +3,7 @@
     --color-primary: #214784;
     --color-secondary: #8796AF;
     --color-bg: #98AED2;
+    --color-accent: #B1740F;
 
     /* Шрифты */
     --font-family: 'Literata', serif;
@@ -13,6 +14,17 @@
     --line-height-title: 65px;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+/*___________________ХЭДЕР______________________ */
 .site-header {
     position: relative;
     padding: 20px 0;
@@ -121,21 +133,18 @@
 }
 
 .search-button {
-    width: 113px;
-    height: 142px;
-    background-image: url("../images/search_glass.webp");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 116px;
+    height: 140px;
+    background: url("../images/search_sprite.webp") no-repeat 0 0;
+    background-size: 232px 140px;
     border: none;
-    background-color: transparent;
     cursor: pointer;
+    background-color: transparent;
     margin-top: -20px;
-    transition: background-image 0.3s ease;
 }
 
 .search-button:hover {
-    background-image: url("../images/search_glass_hover.webp");
+    background-position: -116px 0;
 }
 
 .auth-button {
@@ -160,12 +169,12 @@
     margin-bottom: -15px;
 }
 
-
 .cart-button-wrapper {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .cart-button {
@@ -183,8 +192,24 @@
     position: relative;
 }
 
-.cart-button:hover {
+.cart-button:hover .cart-icon {
     background-image: url("../images/basket_icon_hover.webp");
+}
+
+.preload-images {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    background:
+        url("../images/basket_icon_hover.webp") no-repeat,
+        url("../images/search_glass_hover.webp") no-repeat;
+}
+
+.cart-button:hover .cart-count,
+.cart-button:hover .cart-price {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
 }
 
 .cart-count {
@@ -204,7 +229,6 @@
     justify-content: center;
 }
 
-/* Цена под иконкой */
 .cart-price {
     margin-top: 8px;
     font-size: 14px;
@@ -226,4 +250,98 @@
     margin: 2px auto 0;
     border-top: 3px solid var(--color-primary);
     height: 0;
+}
+
+/*___________________HERO SECTION______________________ */
+
+.hero {
+    background-image: url("../images/hero_page_alt.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-height: 513px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 549px;
+    height: 231px;
+    left: 282px;
+    top: 259px;
+    margin: auto;
+}
+
+.hero-header {
+    width: 549px;
+    height: 0px;
+    text-align: start;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 900;
+    font-size: var(--font-size-h1);
+    line-height: 59px;
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+}
+
+.hero-subtitle {
+    text-align: start;
+
+    font-family: 'Literata';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+
+.hero-btn {
+    position: relative;
+    width: 167px;
+    background: #ffffff;
+    color: #072556;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.hero-btn::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+    border: 1px solid #072556;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+@media (min-width: 2000px) {
+    .hero {
+        min-height: 650px;
+    }
+    .hero-content{
+        left: 450px;
+    }
 }
