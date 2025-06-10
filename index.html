@@ -1,131 +1,136 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Магазин перьевых ручек</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  </head>
 
-  <body>
-    <header class="site-header">
-      <div class="preload-images"></div>
-      <!-- Центрируемая область -->
-      <div class="header-wrapper">
-        <img src="images/hand_left.svg" class="arm-icon" />
-    
-        <div class="header-center">
-          <div class="title-wrapper">
-            <h1>ЧЕРНИЛЬНАЯ ЛАВКА</h1>
-            <img src="images/ink_quill.svg" class="logo-icon" />
-          </div>
-    
-          <nav class="category-menu">
-            <a href="#">Перьевые ручки</a>
-            <a href="#">Чернила</a>
-            <a href="#">Бумага</a>
-            <a href="#">Аксессуары</a>
-          </nav>
-        </div>
-    
-        <img src="images/hand_right.svg" class="arm-icon" />
-      </div>
-    
-      <!-- Абсолютно позиционированный блок с кнопками -->
-      <div class="main-actions">
-        <button class="search-button" aria-label="Поиск"></button>
-    
-        <div class="auth-button">
-          <span>Логин<br />/ <br />Регистрация</span>
-        </div>
-        <div class="cart-button-wrapper">
-          <div class="cart-button">
-            <div class="cart-icon">
-              <span class="cart-count">2</span>
-            </div>
-            <div class="cart-price">1200 р.</div>
-          </div>
-        </div>
-    
-    </header>
-    <div class="decorative-line"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Магазин перьевых ручек</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
 
-    <!-- Hero section -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1 class="hero-header">ЧЕРНИЛА.ПЕРО.ВЫ.</h1>
-        <p class="hero-subtitle">Найдите свою идеальную перьевую ручку и начните писать новую главу</p>
-        <a href="#" class="hero-btn">Смотреть</a>
-      </div>
-    </section>
+<body>
+  <header class="site-header">
+    <div class="preload-images"></div>
+    <!-- Центрируемая область -->
+    <div class="header-wrapper">
+      <img src="images/hand_left.svg" class="arm-icon" />
 
-    <div class="brand-track">
-      <div class="brand-item">
-        <div class="logo-wrap"><img src="images/brand_1.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_2.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_3.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_4.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_5.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_6.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_7.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_8.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_9.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_10.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_11.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_12.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_13.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_14.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_15.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_16.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_17.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_18.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_19.png" /></div>
-        <!-- повтор логотипов -->
+      <div class="header-center">
+        <div class="title-wrapper">
+          <h1>ЧЕРНИЛЬНАЯ ЛАВКА</h1>
+          <img src="images/ink_quill.svg" class="logo-icon" />
+        </div>
+
+        <nav class="category-menu">
+          <a href="#">Перьевые ручки</a>
+          <a href="#">Чернила</a>
+          <a href="#">Бумага</a>
+          <a href="#">Аксессуары</a>
+        </nav>
       </div>
-      <div class="brand-item">
-        <div class="logo-wrap"><img src="images/brand_1.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_2.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_3.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_4.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_5.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_6.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_7.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_8.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_9.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_10.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_11.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_12.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_13.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_14.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_15.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_16.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_17.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_18.png" /></div>
-        <div class="logo-wrap"><img src="images/brand_19.png" /></div>
-      </div>
+
+      <img src="images/hand_right.svg" class="arm-icon" />
     </div>
 
-      <!-- главная секция -->
-   <div class="page-width">
+    <!-- Абсолютно позиционированный блок с кнопками -->
+    <div class="main-actions">
+      <button class="search-button" aria-label="Поиск"></button>
+
+      <div class="auth-button">
+        <span>Логин<br />/ <br />Регистрация</span>
+      </div>
+      <div class="cart-button-wrapper">
+        <div class="cart-button">
+          <div class="cart-icon">
+            <span class="cart-count">2</span>
+          </div>
+          <div class="cart-price">1200 р.</div>
+        </div>
+      </div>
+
+  </header>
+  <div class="decorative-line"></div>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-header">ЧЕРНИЛА.ПЕРО.ВЫ.</h1>
+      <p class="hero-subtitle">Найдите свою идеальную перьевую ручку и начните писать новую главу</p>
+      <a href="#" class="hero-btn">Смотреть</a>
+    </div>
+  </section>
+
+  <div class="brand-track">
+    <div class="brand-item">
+      <div class="logo-wrap"><img src="images/brand_1.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_2.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_3.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_4.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_5.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_6.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_7.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_8.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_9.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_10.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_11.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_12.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_13.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_14.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_15.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_16.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_17.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_18.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_19.png" /></div>
+      <!-- повтор логотипов -->
+    </div>
+    <div class="brand-item">
+      <div class="logo-wrap"><img src="images/brand_1.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_2.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_3.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_4.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_5.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_6.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_7.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_8.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_9.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_10.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_11.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_12.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_13.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_14.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_15.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_16.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_17.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_18.png" /></div>
+      <div class="logo-wrap"><img src="images/brand_19.png" /></div>
+    </div>
+  </div>
+
+  <!-- главная секция -->
+  <div class="page-width">
     <div class="homepg-top-grid">
       <aside class="blog-suggestions">
-        <img src="images/blog_logo.svg"/>
+        <img src="images/blog_logo.svg"  class="blog-logo"  />
 
         <div class="blogs-container">
 
-         <a href="#" class="blog-card"> 
-          <span class="sidebar-blog-image">  
-            <img src="images/blog_1.png" class="blog-image" />
-          </span>
-          <div class="blog-info">
-            <div class="blog-info-title">Как выбрать свою первую перьевую ручку</div>
-            <div class="blog-info-date">6 июля 2022</div>
-          </div>
+          <a href="#" class="blog-card">
+            <span class="sidebar-blog-image">
+              <img src="images/blog_1.png" class="blog-image" />
+            </span>
+            <div class="blog-info">
+              <div class="blog-info-title">Как выбрать свою первую перьевую ручку</div>
+              <div class="blog-info-date">6 июля 2022</div>
+            </div>
           </a>
 
-          <a href="#" class="blog-card"> 
-            <span class="sidebar-blog-image">  
+          <a href="#" class="blog-card">
+            <span class="sidebar-blog-image">
               <img src="images/blog_2.png" class="blog-image" />
             </span>
             <div class="blog-info">
@@ -134,24 +139,100 @@
             </div>
           </a>
 
-            <a href="#" class="blog-card"> 
-              <span class="sidebar-blog-image">  
-                <img src="images/blog_3.png" class="blog-image" />
-              </span>
-              <div class="blog-info">
-                <div class="blog-info-title">Почему бумага имеет значение</div>
-                <div class="blog-info-date">6 июля 2022</div>
-              </div>
-            </a>
+          <a href="#" class="blog-card">
+            <span class="sidebar-blog-image">
+              <img src="images/blog_3.png" class="blog-image" />
+            </span>
+            <div class="blog-info">
+              <div class="blog-info-title">Почему бумага имеет значение</div>
+              <div class="blog-info-date">6 июля 2022</div>
+            </div>
+          </a>
+
           <a href="#" class="blog-read-more">Еще</a>
-        </div>   
+        </div>
       </aside>
-      <div class="popular-carusel">
+
+      <!-- Популярное секция -->
+      <div class="popular-carousel-section">
         <h2 class="section-title">Популярные товары</h2>
+
+        <div class="popular-carousel-border">
+
+          <div class="swiper popular-swiper">
+            <div class="carousel-fade-left"></div>
+            <div class="carousel-fade-right"></div>
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <img src="images/prd1.jpg" alt="Pen" />
+                  <div class="card-info-container">
+                  <h3>Kaweco Student EF 50's Rock</h3>
+                  <p>кремовый корпус, синий колпачок</p>
+                  <strong>6080 р.</strong>
+                </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <img src="images/prd2.jpg" alt="Pen" />
+                 <div class="card-info-container">
+                  <h3>Kaweco Student EF 50's Rock</h3>
+                  <p>кремовый корпус, синий колпачок</p>
+                  <strong>6080 р.</strong>
+                </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <img src="images/prd3.jpg" alt="Pen" />
+                 <div class="card-info-container">
+                  <h3>Kaweco Student EF 50's Rock</h3>
+                  <p>кремовый корпус, синий колпачок</p>
+                  <strong>6080 р.</strong>
+                </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <img src="images/prd4.jpg" alt="Pen" />
+                  <div class="card-info-container">
+                  <h3>Kaweco Student EF 50's Rock</h3>
+                  <p>кремовый корпус, синий колпачок</p>
+                  <strong>6080 р.</strong>
+                </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <img src="images/prd5.jpg" alt="Pen" />
+                 <div class="card-info-container">
+                  <h3>Kaweco Student EF 50's Rock</h3>
+                  <p>кремовый корпус, синий колпачок</p>
+                  <strong>6080 р.</strong>
+                </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- стрелки -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
       </div>
+
       <aside class="newsletter">…sdfsfsf---W</aside>
     </div>
-   </div>
-    
-  </body>
+  </div>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="scripts/swiper-init.js"></script>
+</body>

@@ -1,0 +1,71 @@
+<style>
+.product-card {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  
+    width: 466px;
+    height: 524.08px;
+  
+    /* Винтажный фон с текстурой */
+    background: #FDF6E3 url('paper-texture.jpg') repeat;
+    border: 4px double #214784; /* Двойная обводка для винтажного эффекта */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Тень для объема */
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .product-image {
+    width: 80%;
+    height: auto;
+    border: 2px solid #214784;
+    background: #fff;
+    padding: 10px;
+    transform: rotate(-2deg); /* Легкий наклон для максимализма */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #214784;
+    text-align: center;
+    margin: 15px 0;
+  }
+  
+  .product-price {
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+    button {
+  background-color: #fdfcf7;
+  border: 2px double #214784;
+  color: #214784;
+  font-family: 'Playfair Display', serif;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+
+</style>
+  <div class="product-card">
+    <img src="pen-image.jpg" alt="Pen" class="product-image">
+    <h2 class="product-title">Fountain Pen Deluxe</h2>
+    <p class="product-price">$49.99</p>
+    <button class="button">Add to Cart</button>
+  </div>
+  

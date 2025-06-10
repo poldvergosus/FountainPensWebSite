@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Fountain Pen Emporium – Premium Fountain Pens">
+  <meta name="description" content="Discover our curated collection of premium fountain pens, perfect for writing enthusiasts and collectors.">
+  <meta property="og:title" content="Fountain Pen Emporium">
+  <meta property="og:image" content="/path/to/og-image.jpg">
+  <meta property="og:description" content="Discover our curated collection of premium fountain pens, perfect for writing enthusiasts and collectors.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:site_name" content="Fountain Pen Emporium">
+  <title>Fountain Pen Emporium – Premium Fountain Pens</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Подключение ваших стилей -->
+  <!-- Подключение Snipcart для корзины -->
+  <script async src="https://cdn.snipcart.com/themes/v3.0.11/default/snipcart.js"></script>
+  <div id="snipcart" data-api-key="YOUR_SNIPCART_API_KEY" hidden></div>
+</head>
+<body>
+  <!-- Шапка сайта в стиле газеты -->
+  <header class="site-header">
+    <div class="header-content">
+      <div class="header-decor">
+        <div class="decor-line"></div>
+        <h1 class="site-title">Fountain Pen Emporium</h1>
+        <div class="decor-line"></div>
+      </div>
+      <nav class="main-nav">
+        <ul class="about-submenu__links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/catalog">Catalog</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="#" class="snipcart-checkout">Cart (<span class="snipcart-items-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Главная секция (газетная верстка) -->
+  <main class="main-content">
+    <!-- Герой-секция (баннер в стиле газеты) -->
+    <section class="hero-section">
+      <div class="hero-grid">
+        <div class="hero-image">
+          <img src="/path/to/hero-pen.jpg" alt="Premium Fountain Pen">
+          <div class="hero-overlay">
+            <h2 class="headline">Discover the Art of Writing</h2>
+            <p class="note">A curated collection of premium fountain pens for enthusiasts and collectors alike.</p>
+            <a href="/catalog" class="cta-button">Shop Now</a>
+          </div>
+        </div>
+        <aside class="hero-sidebar">
+          <div class="sidebar-block">
+            <h3 class="sidebar-title">Special Offer</h3>
+            <p class="sidebar-text">Get 20% off your first purchase! Use code: PEN20</p>
+          </div>
+          <div class="sidebar-block">
+            <h3 class="sidebar-title">New Arrivals</h3>
+            <p class="sidebar-text">Explore our latest collection of limited edition pens.</p>
+            <a href="/new-arrivals" class="sidebar-link">See More</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Каталог товаров (сложная газетная сетка) -->
+    <section class="products-grid">
+      <div class="section-header">
+        <div class="decor-line"></div>
+        <h2 class="section-title">Featured Pens</h2>
+        <div class="decor-line"></div>
+      </div>
+      <div class="products-grid-content">
+        <div class="products-grid-main">
+          <div class="aggregators-grid">
+            <!-- Карточка товара 1 (крупная) -->
+            <div class="aggregators-grid-cell large">
+              <div class="logo-block">
+                <a href="/product/pen1">
+                  <img src="/path/to/pen1.jpg" alt="Montblanc Meisterstück">
+                </a>
+              </div>
+              <div class="text-block">
+                <div class="title">
+                  <a href="/product/pen1">Montblanc Meisterstück</a>
+                </div>
+                <div class="price">$150</div>
+                <div class="description">A timeless classic, perfect for everyday writing.</div>
+                <div class="links">
+                  <a href="/product/pen1">View Details</a>
+                  <a href="#" class="snipcart-add-item"
+                     data-item-id="pen1"
+                     data-item-price="150"
+                     data-item-url="/product/pen1"
+                     data-item-name="Montblanc Meisterstück"
+                     data-item-image="/path/to/pen1.jpg">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара 2 (стандартная) -->
+            <div class="aggregators-grid-cell">
+              <div class="logo-block">
+                <a href="/product/pen2">
+                  <img src="/path/to/pen2.jpg" alt="Pelikan Souverän">
+                </a>
+              </div>
+              <div class="text-block">
+                <div class="title">
+                  <a href="/product/pen2">Pelikan Souverän</a>
+                </div>
+                <div class="price">$200</div>
+                <div class="links">
+                  <a href="/product/pen2">View Details</a>
+                  <a href="#" class="snipcart-add-item"
+                     data-item-id="pen2"
+                     data-item-price="200"
+                     data-item-url="/product/pen2"
+                     data-item-name="Pelikan Souverän"
+                     data-item-image="/path/to/pen2.jpg">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка товара 3 (стандартная) -->
+            <div class="aggregators-grid-cell">
+              <div class="logo-block">
+                <a href="/product/pen3">
+                  <img src="/path/to/pen3.jpg" alt="Lamy Safari">
+                </a>
+              </div>
+              <div class="text-block">
+                <div class="title">
+                  <a href="/product/pen3">Lamy Safari</a>
+                </div>
+                <div class="price">$50</div>
+                <div class="links">
+                  <a href="/product/pen3">View Details</a>
+                  <a href="#" class="snipcart-add-item"
+                     data-item-id="pen3"
+                     data-item-price="50"
+                     data-item-url="/product/pen3"
+                     data-item-name="Lamy Safari"
+                     data-item-image="/path/to/pen3.jpg">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="products-sidebar">
+          <div class="sidebar-block">
+            <h3 class="sidebar-title">Filter by Brand</h3>
+            <ul class="filter-list">
+              <li><a href="#">Montblanc</a></li>
+              <li><a href="#">Pelikan</a></li>
+              <li><a href="#">Lamy</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-block">
+            <h3 class="sidebar-title">Top Picks</h3>
+            <p class="sidebar-text">Our experts recommend the Montblanc Meisterstück for its elegance and durability.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Секция "История перьевых ручек" (журнальная верстка) -->
+    <section class="history-section">
+      <div class="section-header">
+        <div class="decor-line"></div>
+        <h2 class="section-title">The History of Fountain Pens</h2>
+        <div class="decor-line"></div>
+      </div>
+      <div class="history-grid">
+        <div class="history-image">
+          <img src="/path/to/history-image.jpg" alt="Fountain Pen History">
+          <div class="history-overlay">
+            <h3 class="overlay-title">From Quill to Fountain</h3>
+            <p class="overlay-text">The evolution of writing instruments through the ages.</p>
+          </div>
+        </div>
+        <div class="history-text">
+          <p class="note">The fountain pen, as we know it today, emerged in the 19th century, revolutionizing the way we write. From the early designs of Lewis Waterman to the modern innovations of Montblanc, fountain pens have become symbols of elegance and craftsmanship.</p>
+          <a href="/history" class="cta-button">Read More</a>
+        </div>
+        <aside class="history-sidebar">
+          <div class="sidebar-block">
+            <h3 class="sidebar-title">Did You Know?</h3>
+            <p class="sidebar-text">The first fountain pen patent was issued in 1827 to Petrache Poenaru.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер в стиле газеты -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3 class="footer-title">Contact Us</h3>
+          <p>Email: info@fountainpenemporium.com</p>
+          <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="/catalog">Catalog</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">Follow Us</h3>
+          <ul class="social-icons">
+            <li>
+              <a href="https://facebook.com" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 5.08 3.74 9.28 8.62 9.95v-7.03h-2.6v-2.92h2.6V9.8c0-2.56 1.53-3.97 3.86-3.97 1.12 0 2.29.2 2.29.2v2.52h-1.29c-1.27 0-1.67.79-1.67 1.6v1.92h2.84l-.45 2.92h-2.39v7.03c4.88-.67 8.62-4.87 8.62-9.95 0-5.52-4.48-10-10-10z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M23.95 4.57a10 10 0 0 1-2.83.77 4.92 4.92 0 0 0 2.16-2.72 9.86 9.86 0 0 1-3.13 1.2 4.92 4.92 0 0 0-8.38 4.48A13.94 13.94 0 0 1 1.64 3.16a4.92 4.92 0 0 0 1.52 6.56 4.9 4.9 0 0 1-2.23-.62v.06a4.92 4.92 0 0 0 3.95 4.82 4.9 4.9 0 0 1-2.22.08 4.92 4.92 0 0 0 4.6 3.42A9.86 9.86 0 0 1 0 19.54a13.94 13.94 0 0 0 7.55 2.21c9.05 0 14-7.5 14-14 0-.21 0-.42-.02-.63A10 10 0 0 0 23.95 4.57z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-decor">
+        <div class="decor-line"></div>
+        <p class="footer-copyright">© 2023 Fountain Pen Emporium. All rights reserved.</p>
+        <div class="decor-line"></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
