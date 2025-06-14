@@ -404,9 +404,9 @@ body {
     column-gap: 5rem;
     display: grid;
     grid-template-areas:
-        "homepg-top-grid popular-carousel newsletter"
-        "homepg-top-grid products newsletter"
-        "homepg-top-grid categories newsletter";
+        "sidebar popular newsletter"
+        "sidebar popular newsletter"
+        "sidebar categories newsletter";
     grid-template-columns: 2fr 7fr 2fr;
     margin-bottom: 4rem;
     margin-top: 2rem;
@@ -504,6 +504,12 @@ body {
     flex: 1;
     height: 3px;
     background-color: var(--color-primary);
+}
+
+.blog-card:hover,
+.blog-card:hover .blog-info-title,
+.blog-card:hover .blog-info-date {
+    color: var(--color-accent);
 }
 
 /*___________________POPULAR GRID SECTION______________________ */
@@ -704,6 +710,126 @@ body {
     cursor: pointer;
 }
 
+
+
+
+/*__________POPULAR CATEGORY SECTION______________________ */
+
+
+.category-container {
+    grid-area: categories;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    padding: 0px;
+    gap: 88.65px;
+    text-align: center;
+    min-width: 860.63px;
+    min-height: 231.08px;
+    margin: 0 auto;
+}
+
+.category-container h3 {
+    font-family: 'Literata';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 41px;
+
+    color: var(--color-primary);
+    margin: 0 auto;
+}
+
+.category-card {
+ text-decoration: none;
+}
+
+.category-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.sprite-icon {
+    display: block;
+    margin: 0 auto;
+    width: 197px;
+    height: 157px;
+    position: relative;
+    overflow: hidden
+}
+
+.sprite-icon::before,
+.sprite-icon::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.sprite-icon::before {
+    z-index: 2;
+    opacity: 1;
+}
+
+.sprite-icon::after {
+    z-index: 1;
+}
+
+.category-card:hover .sprite-icon::before {
+    opacity: 0;
+}
+
+.category-card:hover h3 {
+    color: var(--color-accent);
+    transition: color 0.3s ease;
+}
+
+/* Спрайт 1: чернила */
+.icon-ink::before {
+    background-image: url('/images/category_sprite (1).png');
+    background-position: -198px 0;
+    background-size: auto 100%;
+    background-color: #FFFFFF;
+}
+
+.icon-ink::after {
+    background-image: url('/images/category_sprite (1).png');
+    background-position: 0 0;
+    background-size: auto 100%;
+}
+
+/* Спрайт 2: перьевые ручки */
+
+.icon-pen::before {
+    background-image: url('/images/ctgr_sprt_2.png');
+    background-position: 12px 0px;
+    background-size: auto 100%;
+}
+
+.icon-pen::after {
+    background-image: url('/images/ctgr_sprt_1.png');
+    background-position: 12px 0px;
+    background-size: auto 100%;
+}
+
+
+/* Спрайт 3: ежедневники */
+.icon-notebook::before {
+    background-image: url('/images/ctgr_sprt_3.png');
+    background-position: -15px 0px;
+    background-size: auto 94%;
+}
+
+.icon-notebook::after {
+    background-image: url('/images/category_sprt_2.png');
+    background-position: -15px 0px;
+    background-size: auto 94%;
+}
+
 /*___________________MEDIA SECTION______________________ */
 
 .aside-container--bottom-right {
@@ -726,19 +852,28 @@ body {
     font-weight: 100;
     box-sizing: border-box;
     margin: 1em 0;
+    color: var(--color-text-bg);
+
 }
 
 .subscribe {
     border: 2px solid var(--color-primary);
-    background: var(--color-primary) ;
+    background: var(--color-primary);
     color: #ffffff;
     cursor: pointer;
-    
+
     padding: 0.6rem 1rem;
 
-     font-size: 20px;
+    font-size: 20px;
     font-family: var(--font-family);
     font-weight: 100;
+    transition: all 0.4s ease;
+
+}
+
+.subscribe:hover {
+    background: var(--color-accent);
+    border: 2px solid var(--color-accent);
 }
 
 

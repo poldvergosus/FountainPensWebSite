@@ -114,7 +114,7 @@
   <!-- главная секция -->
   <div class="page-width">
     <div class="homepg-top-grid">
-      <aside class="aside-container aside-container--top-left">
+      <aside class="aside-container aside-container--top-left" style="grid-area: sidebar">
         <img src="images/blog_logo.svg" class="blog-logo" />
 
         <div class="blogs-container">
@@ -154,7 +154,7 @@
       </aside>
 
       <!-- Популярное секция -->
-      <div class="popular-carousel-section">
+      <div class="popular-carousel-section" style="grid-area: popular">
         <h2 class="section-title">Популярные товары</h2>
 
         <div class="popular-carousel-border">
@@ -229,22 +229,54 @@
             <!-- стрелки -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+
           </div>
+
         </div>
+
+        <h2 class="section-title">Популярные категории</h2>
+        <div class="category-container">
+
+          <a href="#" class="category-card">
+            <div class="sprite-icon icon-ink"></div>
+            <div class="category-info-container">
+              <h3>Чернила</h3>
+            </div>
+          </a>
+
+          <a href="#" class="category-card">
+            <div class="sprite-icon icon-pen"></div>
+            <div class="category-info-container">
+              <h3>Перьевые ручки</h3>
+            </div>
+          </a>
+
+          <a href="#" class="category-card">
+            <div class="sprite-icon icon-notebook"></div>
+            <div class="category-info-container">
+              <h3>Ежедневники</h3>
+            </div>
+        </div>
+        </a>
+
       </div>
 
-      <aside class="aside-container aside-container--bottom-right">
+
+      <aside class="aside-container aside-container--bottom-right" style="grid-area: newsletter">
         <img src="images/newsletter_logo.svg" class="blog-logo" />
         <div class="card-info-container">
           <h3>Подпишитесь на нашу рассылку</h3>
           <p>Новинки, обзоры, советы, специальные предложения</p>
         </div>
-        <input class="email-textbox"  type="text" placeholder="Email" >
+        <input class="email-textbox" type="text" placeholder="Email">
         <button class="subscribe">Подписаться</button>
       </aside>
 
     </div>
   </div>
+
+
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
