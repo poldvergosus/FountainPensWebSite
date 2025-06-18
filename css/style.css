@@ -801,14 +801,14 @@ body {
 
 /* Спрайт 1: чернила */
 .icon-ink::before {
-    background-image: url('/images/category1.png');
+    background-image: url('/images/category1.webp');
     background-position: -198px 0;
     background-size: auto 100%;
     background-color: #FFFFFF;
 }
 
 .icon-ink::after {
-    background-image: url('/images/category1.png');
+    background-image: url('/images/category1.webp');
     background-position: 0 0;
     background-size: auto 100%;
 }
@@ -816,26 +816,26 @@ body {
 /* Спрайт 2: перьевые ручки */
 
 .icon-pen::before {
-    background-image: url('/images/category2a.png');
+    background-image: url('/images/category2a.webp');
     background-position: 12px 0px;
     background-size: auto 100%;
 }
 
 .icon-pen::after {
-    background-image: url('/images/category2b.png');
+    background-image: url('/images/category2b.webp');
     background-position: 12px 0px;
     background-size: auto 100%;
 }
 
 /* Спрайт 3: ежедневники */
 .icon-notebook::before {
-    background-image: url('/images/category3a.png');
+    background-image: url('/images/category3a.webp');
     background-position: -15px 0px;
     background-size: auto 94%;
 }
 
 .icon-notebook::after {
-    background-image: url('/images/category3b.png');
+    background-image: url('/images/category3b.webp');
     background-position: -15px 0px;
     background-size: auto 94%;
 }
